@@ -155,7 +155,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html#accueil"
+              <a class="navbar-brand" href="#accueil"
                 ><img
                   src="img/logo_smr.png"
                   style="height: auto; width: 100px"
@@ -169,20 +169,21 @@
             >
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown submenu active" id="li_accueil">
-                  <a href="index.html#accueil">accueil</a>
-                </li>
-                <li id="li_projects">
-                  <a href="index.html#projects">Nos projets</a>
+                  <a href="#accueil">accueil</a>
                 </li>
                 <li id="li_services">
-                  <a href="index.html#services">Nos Services</a>
+                  <a href="#services">Nos Services</a>
                 </li>
+                <li id="li_projects">
+                  <a href="#projects">Nos projets</a>
+                </li>
+             
                 <li id="li_partenaires">
-                  <a href="index.html#partenaires">Nos Partenaires</a>
+                  <a href="#partenaires">Nos Partenaires</a>
                 </li>
 
                 <li id="li_contact">
-                  <a href="index.html#contact">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -1054,6 +1055,14 @@
           $("#li_contact").removeClass("active");
         });
       });
+
+      $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
     </script>
   </body>
 </html>
