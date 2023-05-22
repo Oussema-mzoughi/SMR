@@ -111,32 +111,7 @@
   </head>
   <body>
     <header class="main_header_area">
-      <div class="header_top_area">
-        <div class="container">
-          <div class="pull-left">
-            <a href="tel:0171379939"
-              ><i class="fa fa-phone"></i> 01 71 37 99 39</a
-            >
-            <a href="#"
-              ><i class="fa fa-map-marker"></i> 19 rue de Neuilly, 92110
-              Clichy</a
-            >
-          </div>
-          <div class="pull-right">
-            <ul class="header_social">
-              <li>
-                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"> <i class="fa-brands fa-tiktok"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  
       <div class="main_menu_area">
         <div class="container">
           <nav class="navbar navbar-default">
@@ -155,7 +130,7 @@
               </button>
               <a class="navbar-brand" href="index.html#accueil"
                 ><img
-                  src="img/logo_smr_yellow.png"
+                  src="img/logo_smr.png"
                   style="height: auto; width: 100px"
                   alt=""
               /></a>
@@ -190,14 +165,6 @@
       </div>
     </header>
 
-<section class="banner_area">
-<div class="container">
-<div class="banner_inner_text">
-<h4>Nom du Projet</h4>
-
-</div>
-</div>
-</section>
 
 
 <section class="project_single_area">
@@ -206,30 +173,22 @@
 <div class="project_single_slider">
 <div id="slider" class="flexslider">
 <ul class="slides">
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-s-1.jpg" alt=""></li>
+<li><img  id="main1" src="" alt="" class="myimage"></li>
+<li><img  id="main2" src="" alt="" class="myimage"></li>
+<li><img  id="main3" src="" alt="" class="myimage"></li>
+<li><img  id="main4" src="" alt="" class="myimage"></li>
+<li><img  id="main5" src="" alt="" class="myimage"></li>
+
 </ul>
 </div>
 <div id="carousel" class="flexslider">
 <ul class="slides">
-<li><img src="img/project/project-single-slider/project-thumb-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-2.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-3.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-4.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-1.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-2.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-3.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-4.jpg" alt=""></li>
-<li><img src="img/project/project-single-slider/project-thumb-1.jpg" alt=""></li>
+<li><img id="thumb1" src="" alt="" class="mythumb"></li>
+<li><img id="thumb2"src="" alt="" class="mythumb"></li>
+<li><img id="thumb3" src="" alt="" class="mythumb"></li>
+<li><img id="thumb4" src="" alt="" class="mythumb"></li>
+<li><img id="thumb5" src="" alt="" class="mythumb"></li>
+
 </ul>
 <div class="custom-navigation">
 <a href="#" class="flex-prev"><i class="fa fa-angle-left"></i></a>
@@ -361,7 +320,7 @@
             <div class="col-md-3 col-sm-6">
               <aside class="f_widget about_widget">
                 <img
-                  src="img/logo_smr_yellow.png"
+                  src="img/logo_smr.png"
                   style=" width: 150px"
                   alt=""
                 />
@@ -490,9 +449,43 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+  
+</script>
+<script>
+  $(document).ready(function() {
+    
+
+    alert(getName('a'));
+
+
+    $("#main1").attr("src", "img/project/project-single-slider/resto1.jpg");
+    $("#main2").attr("src", "img/project/project-single-slider/resto2.jpg");
+    $("#main3").attr("src", "img/project/project-single-slider/resto3.jpg");
+    $("#main4").attr("src", "img/project/project-single-slider/resto4.jpg");
+    $("#main5").attr("src", "img/project/project-single-slider/resto5.jpg");
+    
+
+
+    $("#thumb1").attr("src", "img/project/project-single-slider/resto1_thumb.jpg");
+    $("#thumb2").attr("src", "img/project/project-single-slider/resto2_thumb.jpg");
+    $("#thumb3").attr("src", "img/project/project-single-slider/resto3_thumb.jpg");
+    $("#thumb4").attr("src", "img/project/project-single-slider/resto4_thumb.jpg");
+    $("#thumb5").attr("src", "img/project/project-single-slider/resto5_thumb.jpg");
+  // Code to be executed when the document is ready
+  // You can perform actions like manipulating the DOM, binding event handlers, etc.
+});
+
+
+function getName(name) {
+  var url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114" integrity="sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==" data-cf-beacon='{"rayId":"7af472b279930dac","version":"2023.3.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
 </body>
-
-<!-- Mirrored from preview.colorlib.com/theme/webuilder/project-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Mar 2023 01:48:45 GMT -->
 </html>
