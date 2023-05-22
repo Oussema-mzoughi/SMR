@@ -455,22 +455,63 @@
   $(document).ready(function() {
     
 
-    alert(getName('a'));
+    var p1,p2,p3,p4,p5;
 
 
-    $("#main1").attr("src", "img/project/project-single-slider/resto1.jpg");
-    $("#main2").attr("src", "img/project/project-single-slider/resto2.jpg");
-    $("#main3").attr("src", "img/project/project-single-slider/resto3.jpg");
-    $("#main4").attr("src", "img/project/project-single-slider/resto4.jpg");
-    $("#main5").attr("src", "img/project/project-single-slider/resto5.jpg");
+
+
+    if(getName('a')==="2")
+    {
+      p1="resto1";
+      p2="resto2";
+      p3="resto3";
+      p4="resto4";
+      p5="resto5";
+    }
+
+    if(getName('a')==="1")
+    {
+      p1="rennovation1";
+      p2="rennovation2";
+      p3="rennovation3";
+      p4="rennovation4";
+      p5="rennovation5";
+    }
+
+
+    if(getName('a')==="3")
+    {
+      p1="cabinet1";
+      p2="cabinet2";
+      p3="cabinet3";
+      p4="cabinet4";
+      p5="cabinet5";
+    }
+
+
+    if(getName('a')==="4")
+    {
+      p1="bowl1";
+      p2="bowl2";
+      p3="bowl3";
+      p4="bowl4";
+      p5="bowl5";
+    }
+
+
+    $("#main1").attr("src", "img/project/project-single-slider/"+p1+".jpg");
+    $("#main2").attr("src", "img/project/project-single-slider/"+p2+".jpg");
+    $("#main3").attr("src", "img/project/project-single-slider/"+p3+".jpg");
+    $("#main4").attr("src", "img/project/project-single-slider/"+p4+".jpg");
+    $("#main5").attr("src", "img/project/project-single-slider/"+p5+".jpg");
     
 
 
-    $("#thumb1").attr("src", "img/project/project-single-slider/resto1_thumb.jpg");
-    $("#thumb2").attr("src", "img/project/project-single-slider/resto2_thumb.jpg");
-    $("#thumb3").attr("src", "img/project/project-single-slider/resto3_thumb.jpg");
-    $("#thumb4").attr("src", "img/project/project-single-slider/resto4_thumb.jpg");
-    $("#thumb5").attr("src", "img/project/project-single-slider/resto5_thumb.jpg");
+    $("#thumb1").attr("src", "img/project/project-single-slider/"+p1+"_thumb.jpg");
+    $("#thumb2").attr("src", "img/project/project-single-slider/"+p2+"_thumb.jpg");
+    $("#thumb3").attr("src", "img/project/project-single-slider/"+p3+"_thumb.jpg");
+    $("#thumb4").attr("src", "img/project/project-single-slider/"+p4+"_thumb.jpg");
+    $("#thumb5").attr("src", "img/project/project-single-slider/"+p5+"_thumb.jpg");
   // Code to be executed when the document is ready
   // You can perform actions like manipulating the DOM, binding event handlers, etc.
 });
