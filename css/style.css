@@ -3014,7 +3014,7 @@ iframe {
 
 .our_project_details .project_item .project_hover .project_hover_inner {
   height: 100%;
-  border: 2px solid rgba(255, 205, 0, 0.8);
+  border: 2px solid rgba(188, 152, 90, 0.8);
   position: relative;
 }
 
@@ -3077,7 +3077,7 @@ iframe {
 }
 
 .our_project_details .project_item:hover .project_hover .project_hover_inner {
-  background: rgba(255, 205, 0, 0.8);
+  background: rgba(188, 152, 90, 0.8);
 }
 
 .our_project_details .project_item:hover .project_hover .project_hover_inner h4 {
@@ -3117,7 +3117,7 @@ iframe {
 
 .project_item .project_hover .project_hover_inner {
   height: 100%;
-  border: 2px solid rgba(255, 205, 0, 0.8);
+  border: 2px solid rgba(188, 152, 90, 0.8);
   position: relative;
 }
 
@@ -3180,7 +3180,7 @@ iframe {
 }
 
 .project_item:hover .project_hover .project_hover_inner {
-  background: rgba(255, 205, 0, 0.8);
+  background: rgba(188, 152, 90, 0.8);
 }
 
 .project_item:hover .project_hover .project_hover_inner h4 {
