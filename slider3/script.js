@@ -311,4 +311,4 @@ function stopAutoSlide() {
 sliderEl.addEventListener('mousemove', stopAutoSlide);
 sliderEl.addEventListener('touchstart', stopAutoSlide);
 
-timer = setTimeout(autoSlide, 200);
+timer = setTimeout(autoSlide, 2000);
